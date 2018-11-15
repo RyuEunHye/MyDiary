@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/writing"
+            android:layout_width="221dp"
+            android:layout_height="233dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/m_bg_center"
+            android:layout_marginTop="50dp">
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="51dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/edit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="50dp"
+                android:text="글쓰기"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting"
+            android:layout_width="134dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="-51dp"
+            android:layout_toLeftOf="@+id/writing"
+            android:background="@drawable/m_bg_left">
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="47dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/settings" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:text="설정"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/calendar"
+            android:layout_width="146dp"
+            android:layout_height="146dp"
+            android:layout_marginLeft="-75dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/writing"
+            android:background="@drawable/m_bg_right">
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="38dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/calendar" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:text="달력"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/checkList"
+            android:layout_width="144dp"
+            android:layout_height="141dp"
+            android:layout_below="@+id/setting"
+            android:layout_marginTop="57dp"
+            android:layout_marginRight="-69dp"
+            android:layout_toLeftOf="@+id/writing"
+            android:background="@drawable/m_bg_bottom">
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="47dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/checked" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:text="할일"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true">
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
